@@ -17,15 +17,7 @@ A jobb felső sarokban lévő hold / nap ikonnal lehet váltani a sötét és a 
 
 ## Megnyitás
 
-Elég megnyitni az `index.html`-t a böngészőben.
-
-Vagy helyi szerverrel:
-
-```bash
-python -m http.server 1010
-```
-
-és utána: http://localhost:1010
+Az oldal sima HTML, CSS és JavaScript, nem kell hozzá telepíteni semmit: elég duplán kattintani az `index.html`-re, és megnyílik a böngészőben.
 
 ## Fájlok
 
@@ -70,7 +62,6 @@ A `data.js`-t a fenti `index.js` fájlokból generáltam. Egy gyűjtemény így 
 var gyujtemenyek = [
   {
     name: "Strange Strings",        // a gyűjtemény neve
-    type: "házi",                   // "házi" vagy "opcionális"
     url: "https://www.codewars.com/collections/strange-strings-8kyu-1",
     katas: [
       {

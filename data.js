@@ -4,7 +4,6 @@
 var gyujtemenyek = [
   {
     "name": "Strange Strings",
-    "type": "házi",
     "url": "https://www.codewars.com/collections/strange-strings-8kyu-1",
     "katas": [
       {
@@ -316,7 +315,6 @@ var gyujtemenyek = [
   },
   {
     "name": "Functional Fruits",
-    "type": "opcionális",
     "url": "https://www.codewars.com/collections/functional-fruits",
     "katas": [
       {
@@ -419,7 +417,6 @@ var gyujtemenyek = [
   },
   {
     "name": "Jealous Jumpers",
-    "type": "házi",
     "url": "https://www.codewars.com/collections/jealous-jumpers",
     "katas": [
       {
@@ -721,7 +718,6 @@ var gyujtemenyek = [
   },
   {
     "name": "Practical Pyramids",
-    "type": "opcionális",
     "url": "https://www.codewars.com/collections/practical-pyramids",
     "katas": [
       {
@@ -825,7 +821,6 @@ var gyujtemenyek = [
   },
   {
     "name": "Numerous Nuances",
-    "type": "házi",
     "url": "https://www.codewars.com/collections/numerous-nuances",
     "katas": [
       {
@@ -1111,7 +1106,6 @@ var gyujtemenyek = [
   },
   {
     "name": "Interesting Ideas",
-    "type": "opcionális",
     "url": "https://www.codewars.com/collections/interesting-ideas-1",
     "katas": [
       {
@@ -1204,7 +1198,6 @@ var gyujtemenyek = [
   },
   {
     "name": "Ornamental Objectives",
-    "type": "házi",
     "url": "https://www.codewars.com/collections/ornamental-objectives",
     "katas": [
       {
@@ -1430,7 +1423,6 @@ var gyujtemenyek = [
   },
   {
     "name": "Diverging Dungeons",
-    "type": "házi",
     "url": "https://www.codewars.com/collections/diverging-dungeons",
     "katas": [
       {
@@ -1667,7 +1659,6 @@ var gyujtemenyek = [
   },
   {
     "name": "Quiet Quanta",
-    "type": "opcionális",
     "url": "https://www.codewars.com/collections/quiet-quanta",
     "katas": [
       {
@@ -1863,7 +1854,6 @@ var gyujtemenyek = [
   },
   {
     "name": "Boring Bananas",
-    "type": "házi",
     "url": "https://www.codewars.com/collections/boring-bananas",
     "katas": [
       {
@@ -1961,7 +1951,6 @@ var gyujtemenyek = [
   },
   {
     "name": "Hesitant Heroes",
-    "type": "opcionális",
     "url": "https://www.codewars.com/collections/hesitant-heroes",
     "katas": [
       {
@@ -2063,7 +2052,6 @@ var gyujtemenyek = [
   },
   {
     "name": "Elementary Expeditions",
-    "type": "házi",
     "url": "https://www.codewars.com/collections/elementary-expeditions",
     "katas": [
       {
@@ -2382,7 +2370,6 @@ var gyujtemenyek = [
   },
   {
     "name": "Absolute Algorithms",
-    "type": "házi",
     "url": "https://www.codewars.com/collections/absolute-algorithms",
     "katas": [
       {
@@ -2491,7 +2478,6 @@ var gyujtemenyek = [
   },
   {
     "name": "Various Visuals",
-    "type": "házi",
     "url": "https://www.codewars.com/collections/various-visuals",
     "katas": [
       {
@@ -2612,7 +2598,6 @@ var gyujtemenyek = [
   },
   {
     "name": "Recursive Roses",
-    "type": "házi",
     "url": "https://www.codewars.com/collections/recursive-roses",
     "katas": [
       {
@@ -2681,7 +2666,6 @@ var gyujtemenyek = [
   },
   {
     "name": "Tactical Teaspoons",
-    "type": "opcionális",
     "url": "https://www.codewars.com/collections/tactical-teaspoons",
     "katas": [
       {
@@ -2718,7 +2702,6 @@ var gyujtemenyek = [
   },
   {
     "name": "Utmost Umbrellas",
-    "type": "házi",
     "url": "https://www.codewars.com/collections/utmost-umbrellas",
     "katas": [
       {
