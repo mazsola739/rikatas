@@ -40,11 +40,11 @@ body {
 }
 
 a {
-  color: #ff6b4a;
+  color: #f05656;
 }
 
 h2 {
-  border-bottom: 2px solid #ff6b4a;
+  border-bottom: 2px solid #f05656;
   padding-bottom: 5px;
 }
 
@@ -54,7 +54,11 @@ h2 {
 
 /* ---------- Fejlec ---------- */
 
+/* a fejlec csak olyan szeles, mint a tartalom,
+   igy a hold / nap gomb a tartalom jobb szelen van */
 header {
+  max-width: 900px;
+  margin: 0 auto;
   position: relative;
   background: var(--fejlec);
   color: var(--szoveg);
@@ -172,7 +176,7 @@ main {
 }
 
 .csik div {
-  background: #ff6b4a;
+  background: #f05656;
   height: 100%;
 }
 
@@ -260,12 +264,12 @@ summary::after {
 
 details[open] summary::after {
   content: "Bezárás ▲";
-  color: #ff6b4a;
+  color: #f05656;
 }
 
 /* a kinyitott kata narancs keretet kap */
 details[open] {
-  border: 2px solid #ff6b4a;
+  border: 2px solid #f05656;
   border-radius: 6px;
   margin: 8px 0;
 }

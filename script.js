@@ -247,7 +247,7 @@ function rajzolStatisztika() {
 
   // kor diagram, kozepen a szazalek
   document.getElementById("kor").innerHTML = `
-    <div class="kor" style="background: conic-gradient(#ff6b4a ${szazalek}%, var(--keret) 0)">
+    <div class="kor" style="background: conic-gradient(#f05656 ${szazalek}%, var(--keret) 0)">
       <div class="kor-belseje">
         <span class="halvany">Kész</span>
         <b>${szazalek}%</b>
