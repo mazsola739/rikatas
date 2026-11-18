@@ -11,7 +11,6 @@ body {
   --zold: #8fbf8f;
   --kyu-feher: #e6e6e6;
   --fejlec: #151619;
-  --sav: #f05656;
   --sav-szoveg: #ffffff;
 }
 
@@ -27,8 +26,7 @@ body.vilagos {
   --zold: #5f9f5f;
   --kyu-feher: #8a8a8a;
   --fejlec: #e8e8ea;
-  --sav: #f5a3a3;
-  --sav-szoveg: #333333;
+  --sav-szoveg: #222222;
 }
 
 body {
@@ -120,7 +118,7 @@ body.vilagos .hold {
 }
 
 .linkek a:hover {
-  background: #d94848;
+  opacity: 0.85;
 }
 
 /* ---------- Tabok ---------- */
@@ -280,7 +278,7 @@ details[open] {
 }
 
 .nincs-kesz {
-  color: #e08a75;
+  color: #f05656;
 }
 
 /* a kinyitott kata, mint egy Codewars kata oldal */
@@ -473,7 +471,7 @@ pre {
   top: 0;
   left: 0;
   height: 100%;
-  background: var(--sav);
+  background: #f05656;
 }
 
 .sav b {
