@@ -11,7 +11,7 @@ body {
   --zold: #8fbf8f;
   --kyu-feher: #e6e6e6;
   --fejlec: #151619;
-  --sav: #b1361e;
+  --sav: #f05656;
   --sav-szoveg: #ffffff;
 }
 
@@ -27,7 +27,7 @@ body.vilagos {
   --zold: #5f9f5f;
   --kyu-feher: #8a8a8a;
   --fejlec: #e8e8ea;
-  --sav: #d68a7c;
+  --sav: #f5a3a3;
   --sav-szoveg: #333333;
 }
 
@@ -111,7 +111,7 @@ body.vilagos .hold {
   display: inline-block;
   margin: 4px;
   padding: 7px 14px;
-  background: #b1361e;
+  background: #f05656;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
@@ -120,7 +120,7 @@ body.vilagos .hold {
 }
 
 .linkek a:hover {
-  background: #c9432a;
+  background: #d94848;
 }
 
 /* ---------- Tabok ---------- */
