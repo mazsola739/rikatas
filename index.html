@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rikatas</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+  <!-- szines kod (highlight.js) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <!-- hold gomb: sotet / vilagos mod -->
+    <button id="mod-gomb" onclick="modValtas()" title="Sötét / világos mód">
+      <svg class="hold" width="26" height="26" viewBox="0 0 24 24"><path fill="currentColor" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="nap" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <circle cx="12" cy="12" r="4.5" stroke="none"/>
+        <path d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/>
+      </svg>
+    </button>
+
+    <h1>
+      <a href="https://www.codewars.com/users/mazsola39/completed" target="_blank">
+        <img src="codewars.svg" alt="Codewars" class="logo">
+      </a>
+      Rikatas
+    </h1>
+    <p>A Codewars házi feladataim a Junior Front-End Online Programból, és hogy hogyan oldottam meg őket.</p>
+    <p class="linkek">
+      <a href="https://www.codewars.com/users/mazsola39/completed" target="_blank">Codewars</a>
+      <a href="https://github.com/mazsola739" target="_blank">GitHub</a>
+      <a href="https://mazsola739.github.io/mazsola739/" target="_blank">mazsola739</a>
+    </p>
+  </header>
+
+  <nav>
+    <button id="gomb-katak" class="aktiv" onclick="mutatTab('katak')">Katák</button>
+    <button id="gomb-statisztika" onclick="mutatTab('statisztika')">Statisztika</button>
+    <button id="gomb-hogyan" onclick="mutatTab('hogyan')">Hogyan oldottam meg?</button>
+  </nav>
+
+  <main>
+
+    <!-- 1. tab: Katak (fooldal) -->
+    <div id="katak">
+      <p id="osszegzes"></p>
+      <div class="csik"><div id="csik"></div></div>
+
+      <input id="kereses" placeholder="Keresés: kata neve vagy metódus (pl. map)" oninput="rajzolKatak()">
+      <select id="kyu" onchange="rajzolKatak()">
+        <option value="">Minden kyu</option>
+        <option>8 kyu</option>
+        <option>7 kyu</option>
+        <option>6 kyu</option>
+        <option>5 kyu</option>
+        <option>4 kyu</option>
+        <option>3 kyu</option>
+        <option>Beta</option>
+      </select>
+
+      <div id="lista"></div>
+    </div>
+
+    <!-- 2. tab: Statisztika (mint a Codewars Progress resze) -->
+    <div id="statisztika" style="display: none">
+      <div class="kartya ket-oszlop">
+        <div>
+          <h3>Haladás</h3>
+          <div id="haladas"></div>
+
+          <h3>Kyu szerint</h3>
+          <div id="kyu-diagram"></div>
+        </div>
+        <div>
+          <h3>Teljesítés</h3>
+          <div id="kor"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. tab: Hogyan oldottam meg -->
+    <div id="hogyan" style="display: none">
+      <p class="halvany">Ezeket használtam a legtöbbször. Kattints egy sorra, és megmutatom a katákat!</p>
+      <div class="kartya ket-oszlop">
+        <div>
+          <h3>Metódusok</h3>
+          <div id="metodusok"></div>
+        </div>
+        <div>
+          <h3>Megoldási módok</h3>
+          <div id="technikak"></div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    Készítette: Rika &middot; <a href="https://github.com/mazsola739/rikatas" target="_blank">github.com/mazsola739/rikatas</a>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

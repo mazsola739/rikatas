@@ -1,0 +1,546 @@
+/* Szinek: alapbol sotet, mint a Codewars.
+   Ha a body-n rajta van a "vilagos" osztaly, akkor vilagos. */
+body {
+  --hatter: #151619;
+  --kartya: #202124;
+  --doboz: #303135;
+  --keret: #36373b;
+  --szoveg: #e3e3e3;
+  --halvany: #9a9ca3;
+  --csik: #36373b;
+  --zold: #8fbf8f;
+  --kyu-feher: #e6e6e6;
+  --fejlec: #151619;
+  --sav: #b1361e;
+  --sav-szoveg: #ffffff;
+}
+
+/* vilagos mod, mint a Codewars light mode */
+body.vilagos {
+  --hatter: #e8e8ea;
+  --kartya: #f3f3f5;
+  --doboz: #e3e3e6;
+  --keret: #d4d4d8;
+  --szoveg: #222222;
+  --halvany: #5f6066;
+  --csik: #dcdce0;
+  --zold: #5f9f5f;
+  --kyu-feher: #8a8a8a;
+  --fejlec: #e8e8ea;
+  --sav: #d68a7c;
+  --sav-szoveg: #333333;
+}
+
+body {
+  margin: 0;
+  font-family: Lato, Arial, sans-serif;
+  background: var(--hatter);
+  color: var(--szoveg);
+  line-height: 1.5;
+}
+
+a {
+  color: #ff6b4a;
+}
+
+h2 {
+  border-bottom: 2px solid #ff6b4a;
+  padding-bottom: 5px;
+}
+
+.halvany {
+  color: var(--halvany);
+}
+
+/* ---------- Fejlec ---------- */
+
+header {
+  position: relative;
+  background: var(--fejlec);
+  color: var(--szoveg);
+  text-align: center;
+  padding: 25px 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+  color: #f05656; /* ugyanaz, mint a Codewars logo szine */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Codewars logo (codewars.svg) */
+.logo {
+  display: block;
+  width: 46px;
+}
+
+/* a hold gomb a jobb felso sarokban */
+#mod-gomb {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--szoveg); /* az ikon szine */
+}
+
+/* sotet modban a hold, vilagosban a nap latszik */
+.nap {
+  display: none;
+}
+
+body.vilagos .nap {
+  display: inline;
+}
+
+body.vilagos .hold {
+  display: none;
+}
+
+/* gombok, mint a Codewars "SIGN UP" gombja */
+.linkek a {
+  display: inline-block;
+  margin: 4px;
+  padding: 7px 14px;
+  background: #b1361e;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.linkek a:hover {
+  background: #c9432a;
+}
+
+/* ---------- Tabok ---------- */
+
+nav {
+  background: var(--fejlec);
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10; /* hogy gorgeteskor minden alatta menjen el */
+  border-bottom: 1px solid var(--keret);
+}
+
+nav {
+  padding: 8px;
+}
+
+/* tabok, mint a Codewarson: az aktiv egy lekerekitett "pill" */
+nav button {
+  background: none;
+  border: none;
+  border-radius: 6px;
+  color: var(--halvany);
+  font-family: inherit;
+  font-size: 16px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  color: var(--szoveg);
+}
+
+nav button.aktiv {
+  background: var(--kartya);
+  color: var(--szoveg);
+}
+
+/* ---------- Fo resz ---------- */
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.csik {
+  background: var(--csik);
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.csik div {
+  background: #ff6b4a;
+  height: 100%;
+}
+
+#kereses {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input, select {
+  padding: 8px;
+  font-family: inherit;
+  font-size: 16px;
+  background: var(--kartya);
+  color: var(--szoveg);
+  border: 1px solid var(--keret);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* ---------- Gyujtemenyek es katak ---------- */
+
+/* kartya: a gyujtemenyek, a statisztika es a "hogyan" doboza */
+.kartya {
+  background: var(--kartya);
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.kartya h3 {
+  margin-top: 0;
+}
+
+/* kis Codewars logo + "codewars" a gyujtemeny neve mellett */
+.cw-link {
+  color: #f05656;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  margin-left: 6px;
+}
+
+.cw-link:hover {
+  text-decoration: underline;
+}
+
+.kis-logo {
+  width: 18px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+details {
+  border-top: 1px solid var(--keret);
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 6px;
+  cursor: pointer;
+  list-style: none; /* eltuntetem az alap kis haromszoget */
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:hover b {
+  color: #f05656;
+}
+
+/* a sor jobb szelen kiirom, hogy mit csinal a kattintas */
+summary::after {
+  content: "Megnyitás ▼";
+  margin-left: auto;
+  padding-left: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--halvany);
+}
+
+details[open] summary::after {
+  content: "Bezárás ▲";
+  color: #ff6b4a;
+}
+
+/* a kinyitott kata narancs keretet kap */
+details[open] {
+  border: 2px solid #ff6b4a;
+  border-radius: 6px;
+  margin: 8px 0;
+}
+
+
+.kesz {
+  color: var(--zold);
+}
+
+.nincs-kesz {
+  color: #e08a75;
+}
+
+/* a kinyitott kata, mint egy Codewars kata oldal */
+.reszletek {
+  padding: 5px 15px 15px;
+}
+
+/* "LEÍRÁS:", "AZ ÉN MEGOLDÁSOM:" feliratok */
+.reszletek h4 {
+  text-transform: uppercase;
+  color: var(--halvany);
+  font-size: 14px;
+  margin: 20px 0 10px;
+}
+
+.leiras {
+  font-size: 16px;
+  line-height: 1.7;
+  padding-left: 20px;
+}
+
+.leiras p, .leiras ul, .leiras pre {
+  margin: 0 0 15px;
+}
+
+/* kis kod-doboz a szovegben */
+.leiras code {
+  font-family: monospace;
+  font-size: 14px;
+  background: var(--doboz);
+  border: 1px solid var(--keret);
+  border-radius: 3px;
+  padding: 1px 5px;
+}
+
+/* a kod mindig sotet hatteren van */
+pre {
+  background: #141518;
+  color: #e3e3e3;
+  padding: 12px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-size: 14px;
+}
+
+/* kod doboz, mint a Codewars szerkesztoje */
+.szerkeszto {
+  margin: 20px 0;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #3b3c41;
+}
+
+.szerkeszto-cim {
+  background: #2a2b2f;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+.szerkeszto-kod {
+  display: flex;
+  background: #1b1c20;
+}
+
+.szerkeszto-kod pre {
+  margin: 0;
+  background: none;
+  border-radius: 0;
+  line-height: 1.5;
+  flex: 1;
+}
+
+/* a sorszamok oszlopa */
+.szerkeszto-kod .sorszamok {
+  flex: none;
+  color: #6b6d75;
+  text-align: right;
+  border-right: 1px solid #3b3c41;
+  user-select: none;
+}
+
+.szerkeszto code.hljs {
+  padding: 0;
+  background: none;
+}
+
+/* gombok, mint a Codewars "LEARN MORE": kek keret */
+.gomb {
+  display: inline-block;
+  background: none;
+  color: #4a8fd8;
+  border: 1px solid #4a8fd8;
+  font-family: inherit;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 7px 14px;
+  margin-right: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.gomb:hover {
+  background: var(--keret);
+}
+
+/* cimkek, mint a Codewars tagjei (FUNDAMENTALS, ALGORITHMS...) */
+.cimke {
+  display: inline-block;
+  background: var(--doboz);
+  color: var(--halvany);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 3px 8px;
+  margin: 2px;
+  border-radius: 3px;
+}
+
+/* ---------- Kyu: a Codewars szinei es hatszog formaja ---------- */
+
+.k8, .k7 { color: var(--kyu-feher); }
+.k6, .k5 { color: #ecb613; }
+.k4, .k3 { color: #3c7ebb; }
+.k2, .k1 { color: #866cc7; }
+.kB { color: #8a8a8a; }
+
+/* a cimke: a kulso resz a keret, a belso a kitoltes */
+.kyu {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 8px;
+  padding: 2px;
+  background: currentColor;
+  clip-path: polygon(9px 0, calc(100% - 9px) 0, 100% 50%, calc(100% - 9px) 100%, 9px 100%, 0 50%);
+}
+
+.kyu span {
+  display: block;
+  padding: 0 12px;
+  font-size: 13px;
+  font-weight: bold;
+  background: var(--kartya);
+  clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 8px 100%, 0 50%);
+}
+
+/* kis szines hatszog a kyu diagramon */
+.hatszog {
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+  margin-right: 6px;
+  vertical-align: middle;
+  background: currentColor;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+
+/* ---------- Statisztika (mint a Codewars Progress) ---------- */
+
+.ket-oszlop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.ket-oszlop > div {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* "Kesz katak: 169" sorok */
+.adat {
+  margin: 3px 0;
+}
+
+.adat b {
+  color: var(--halvany);
+}
+
+/* csik, a felirat a csikon belul (Honor Breakdown) */
+.sav {
+  position: relative;
+  background: var(--doboz);
+  margin-bottom: 4px;
+  height: 28px;
+}
+
+.sav > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--sav);
+}
+
+.sav b {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  line-height: 28px;
+  font-size: 14px;
+  color: var(--sav-szoveg);
+}
+
+#hogyan .sav {
+  cursor: pointer;
+}
+
+#hogyan .sav:hover b {
+  text-decoration: underline;
+}
+
+/* kor diagram (mint a Rank Breakdown) */
+.kor {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kor-belseje {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: var(--kartya);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kor-belseje b {
+  font-size: 36px;
+}
+
+/* ---------- Lablec ---------- */
+
+footer {
+  text-align: center;
+  color: var(--halvany);
+  font-size: 14px;
+  padding: 20px 16px 40px;
+}
+
+/* ---------- Telefonra ---------- */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  nav button {
+    font-size: 14px;
+    padding: 10px 8px;
+  }
+
+  /* telefonon csak a nyil latszik, a szoveg nem fer ki */
+  summary::after {
+    content: "▼";
+  }
+
+  details[open] summary::after {
+    content: "▲";
+  }
+}
