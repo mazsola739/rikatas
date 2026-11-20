@@ -406,9 +406,11 @@ pre {
 .k2, .k1 { color: #866cc7; }
 .kB { color: #8a8a8a; }
 
-/* a cimke: a kulso resz a keret, a belso a kitoltes */
+/* a cimke: a kulso resz a keret, a belso a kitoltes; hosszu kata nevnel se torjon ket sorba */
 .kyu {
   display: inline-block;
+  flex-shrink: 0;
+  white-space: nowrap;
   vertical-align: middle;
   margin: 0 8px;
   padding: 2px;
