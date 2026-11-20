@@ -79,3 +79,7 @@ var gyujtemenyek = [
   }
 ];
 ```
+
+## Licenc
+
+A kód [MIT-licencű](LICENSE). A kata-leírások a Codewars és a szerzőik tulajdonában vannak.
