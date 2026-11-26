@@ -15,21 +15,28 @@ Három tabja van:
 
 A jobb felső sarokban lévő hold / nap ikonnal lehet váltani a sötét és a világos mód között. A kinézet a Codewars stílusát követi.
 
-## Megnyitás
+## Miből épül fel
 
-Az oldal sima HTML, CSS és JavaScript, nem kell hozzá telepíteni semmit: elég duplán kattintani az `index.html`-re, és megnyílik a böngészőben.
-
-## Fájlok
+HTML, CSS és JavaScript – nincs keretrendszer, nincs build lépés, nem kell telepíteni semmit.
 
 | Fájl | Mire való |
 | --- | --- |
-| `index.html` | az oldal váza: fejléc, tabok, üres helyek a tartalomnak |
+| `index.html` | az oldal váza: fejléc, tabok, üres helyek a tartalomnak, lábléc |
 | `style.css` | a kinézet: Codewars színek, kyu címkék, sötét / világos mód |
 | `script.js` | kirajzolja a katákat, a statisztikát és a diagramokat |
 | `data.js` | az összes kata adata egy `gyujtemenyek` nevű változóban |
-| `codewars.svg` | a Codewars logó |
+| `codewars.svg`, `favicon-32.png`, `apple-touch-icon.png` | a Codewars logó és a böngészőfül ikonjai |
 
 A külső dolgok, amiket az oldal betölt: a Lato betűtípus (Google Fonts) és a [highlight.js](https://highlightjs.org/) a színes kódhoz.
+
+## Történet
+
+- 2021 – a katák megoldása JavaScriptben a Junior Front-End Online Program házi feladataként
+- 2026 – a weboldal, amin böngészni lehet őket
+
+## Megnyitás
+
+Elég duplán kattintani az `index.html`-re, és megnyílik a böngészőben. A `main` ágat a GitHub Pages teszi közzé.
 
 ## A megoldások mappái
 
