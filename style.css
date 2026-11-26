@@ -41,11 +41,6 @@ a {
   color: #f05656;
 }
 
-h2 {
-  border-bottom: 2px solid #f05656;
-  padding-bottom: 5px;
-}
-
 .halvany {
   color: var(--halvany);
 }
@@ -130,9 +125,6 @@ nav {
   top: 0;
   z-index: 10; /* hogy gorgeteskor minden alatta menjen el */
   border-bottom: 1px solid var(--keret);
-}
-
-nav {
   padding: 8px;
 }
 
@@ -424,7 +416,6 @@ pre {
 .k8, .k7 { color: var(--kyu-feher); }
 .k6, .k5 { color: #ecb613; }
 .k4, .k3 { color: #3c7ebb; }
-.k2, .k1 { color: #866cc7; }
 .kB { color: #8a8a8a; }
 
 /* a cimke: a kulso resz a keret, a belso a kitoltes; hosszu kata nevnel se torjon ket sorba */
