@@ -222,6 +222,27 @@ input, select {
   text-decoration: underline;
 }
 
+/* Kotelezo / Opcionalis cimke a gyujtemeny neve mellett */
+.tipus {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 1px 8px;
+  border-radius: 10px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.kotelezo {
+  background: #f05656;
+  color: #ffffff;
+}
+
+.opcionalis {
+  border: 1px solid var(--halvany);
+  color: var(--halvany);
+}
+
 .kis-logo {
   width: 18px;
   margin-right: 4px;

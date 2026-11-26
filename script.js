@@ -170,10 +170,15 @@ function rajzolKatak() {
 
     if (katak !== "") {
       const szazalek = kesz / gy.katas.length * 100;
+      // kotelezo hazi vagy opcionalis gyujtemeny volt a kurzuson
+      const tipus = gy.optional
+        ? '<span class="tipus opcionalis">Opcionális</span>'
+        : '<span class="tipus kotelezo">Kötelező</span>';
       html += `
         <div class="kartya">
           <h3>
             ${gy.name}
+            ${tipus}
             <a class="cw-link" href="${gy.url}" target="_blank" title="Megnyitom a Codewarson">
               <img src="codewars.svg" alt="" class="kis-logo">codewars
             </a>

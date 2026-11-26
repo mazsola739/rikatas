@@ -5,6 +5,7 @@ var gyujtemenyek = [
   {
     "name": "Strange Strings",
     "url": "https://www.codewars.com/collections/strange-strings-8kyu-1",
+    "optional": false,
     "katas": [
       {
         "name": "Dollars and Cents",
@@ -316,6 +317,7 @@ var gyujtemenyek = [
   {
     "name": "Functional Fruits",
     "url": "https://www.codewars.com/collections/functional-fruits",
+    "optional": true,
     "katas": [
       {
         "name": "Count characters in your string",
@@ -418,6 +420,7 @@ var gyujtemenyek = [
   {
     "name": "Jealous Jumpers",
     "url": "https://www.codewars.com/collections/jealous-jumpers",
+    "optional": false,
     "katas": [
       {
         "name": "Generate range of integers",
@@ -719,6 +722,7 @@ var gyujtemenyek = [
   {
     "name": "Practical Pyramids",
     "url": "https://www.codewars.com/collections/practical-pyramids",
+    "optional": true,
     "katas": [
       {
         "name": "Replace With Alphabet Position",
@@ -822,6 +826,7 @@ var gyujtemenyek = [
   {
     "name": "Numerous Nuances",
     "url": "https://www.codewars.com/collections/numerous-nuances",
+    "optional": false,
     "katas": [
       {
         "name": "Sleigh Authentication",
@@ -1107,6 +1112,7 @@ var gyujtemenyek = [
   {
     "name": "Interesting Ideas",
     "url": "https://www.codewars.com/collections/interesting-ideas-1",
+    "optional": true,
     "katas": [
       {
         "name": "Caesar Cipher Helper",
@@ -1199,6 +1205,7 @@ var gyujtemenyek = [
   {
     "name": "Ornamental Objectives",
     "url": "https://www.codewars.com/collections/ornamental-objectives",
+    "optional": false,
     "katas": [
       {
         "name": "Number of People in the Bus",
@@ -1424,6 +1431,7 @@ var gyujtemenyek = [
   {
     "name": "Diverging Dungeons",
     "url": "https://www.codewars.com/collections/diverging-dungeons",
+    "optional": false,
     "katas": [
       {
         "name": "Multiple of index",
@@ -1660,6 +1668,7 @@ var gyujtemenyek = [
   {
     "name": "Quiet Quanta",
     "url": "https://www.codewars.com/collections/quiet-quanta",
+    "optional": true,
     "katas": [
       {
         "name": "Formatting a number as price",
@@ -1855,6 +1864,7 @@ var gyujtemenyek = [
   {
     "name": "Boring Bananas",
     "url": "https://www.codewars.com/collections/boring-bananas",
+    "optional": false,
     "katas": [
       {
         "name": "The Supermarket Queue",
@@ -1952,6 +1962,7 @@ var gyujtemenyek = [
   {
     "name": "Hesitant Heroes",
     "url": "https://www.codewars.com/collections/hesitant-heroes",
+    "optional": true,
     "katas": [
       {
         "name": "Simple Pig Latin",
@@ -2053,6 +2064,7 @@ var gyujtemenyek = [
   {
     "name": "Elementary Expeditions",
     "url": "https://www.codewars.com/collections/elementary-expeditions",
+    "optional": false,
     "katas": [
       {
         "name": "Find the Difference in Age between Oldest and Youngest Family Members",
@@ -2371,6 +2383,7 @@ var gyujtemenyek = [
   {
     "name": "Absolute Algorithms",
     "url": "https://www.codewars.com/collections/absolute-algorithms",
+    "optional": false,
     "katas": [
       {
         "name": "Longest alphabetical substring",
@@ -2479,6 +2492,7 @@ var gyujtemenyek = [
   {
     "name": "Various Visuals",
     "url": "https://www.codewars.com/collections/various-visuals",
+    "optional": false,
     "katas": [
       {
         "name": "Give me a Diamond",
@@ -2599,6 +2613,7 @@ var gyujtemenyek = [
   {
     "name": "Recursive Roses",
     "url": "https://www.codewars.com/collections/recursive-roses",
+    "optional": false,
     "katas": [
       {
         "name": "Vigenère Cipher Helper",
@@ -2667,6 +2682,7 @@ var gyujtemenyek = [
   {
     "name": "Tactical Teaspoons",
     "url": "https://www.codewars.com/collections/tactical-teaspoons",
+    "optional": true,
     "katas": [
       {
         "name": "Make a spiral",
@@ -2703,6 +2719,7 @@ var gyujtemenyek = [
   {
     "name": "Utmost Umbrellas",
     "url": "https://www.codewars.com/collections/utmost-umbrellas",
+    "optional": false,
     "katas": [
       {
         "name": "Zeros and Ones",

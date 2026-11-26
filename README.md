@@ -9,7 +9,7 @@ A Codewars házi feladataim a Junior Front-End Online Programból, és egy egysz
 
 Három tabja van:
 
-- **Katák** – ez a főoldal. Az összes feladat gyűjteményenként. Egy katára kattintva kinyílik: látszik a feladat leírása, a megoldásom, és ha van, a refaktorált változat is. Kereshetsz a kata nevére vagy egy metódusra (pl. `map`), és szűrhetsz kyu szerint.
+- **Katák** – ez a főoldal. Az összes feladat gyűjteményenként; a gyűjtemény neve mellett látszik, hogy kötelező házi vagy opcionális volt. Egy katára kattintva kinyílik: látszik a feladat leírása, a megoldásom, és ha van, a refaktorált változat is. Kereshetsz a kata nevére vagy egy metódusra (pl. `map`), és szűrhetsz kyu szerint.
 - **Statisztika** – hány kata kész, és kyu szerinti bontás.
 - **Hogyan oldottam meg?** – mely JavaScript metódusokat és megoldási módokat használtam a legtöbbször. Egy sorra kattintva a Katák tabon megjelennek azok a katák.
 
@@ -63,6 +63,7 @@ var gyujtemenyek = [
   {
     name: "Strange Strings",        // a gyűjtemény neve
     url: "https://www.codewars.com/collections/strange-strings-8kyu-1",
+    optional: false,                // kötelező házi (false) vagy opcionális (true) volt
     katas: [
       {
         name: "Dollars and Cents",
