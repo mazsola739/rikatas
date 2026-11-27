@@ -168,6 +168,10 @@ function rajzolKatak() {
       }
     }
 
+    // kereseskor vagy kyu szurovel nyitva vannak a csoportok, hogy latszodjanak a talalatok;
+    // amugy csak a cimuk es a csikjuk latszik, igy nem kell annyit gorgetni
+    const nyitva = kereses !== "" || kyu !== "";
+
     if (katak !== "") {
       const szazalek = kesz / gy.katas.length * 100;
       // kotelezo hazi vagy opcionalis gyujtemeny volt a kurzuson
@@ -175,18 +179,20 @@ function rajzolKatak() {
         ? '<span class="tipus opcionalis">Opcionális</span>'
         : '<span class="tipus kotelezo">Kötelező</span>';
       html += `
-        <div class="kartya">
-          <h3>
-            ${gy.name}
-            ${tipus}
-            <a class="cw-link" href="${gy.url}" target="_blank" title="Megnyitom a Codewarson">
-              <img src="codewars.svg" alt="" class="kis-logo">codewars
-            </a>
-          </h3>
-          <p class="halvany">${kesz} / ${gy.katas.length} kész</p>
-          <div class="csik"><div style="width: ${szazalek}%"></div></div>
+        <details class="kartya csoport" ${nyitva ? "open" : ""}>
+          <summary>
+            <h3>
+              ${gy.name}
+              ${tipus}
+              <a class="cw-link" href="${gy.url}" target="_blank" title="Megnyitom a Codewarson">
+                <img src="codewars.svg" alt="" class="kis-logo">codewars
+              </a>
+            </h3>
+            <p class="halvany">${kesz} / ${gy.katas.length} kész</p>
+            <div class="csik"><div style="width: ${szazalek}%"></div></div>
+          </summary>
           ${katak}
-        </div>
+        </details>
       `;
     }
   }

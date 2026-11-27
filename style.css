@@ -50,7 +50,7 @@ a {
 /* a fejlec csak olyan szeles, mint a tartalom,
    igy a hold / nap gomb a tartalom jobb szelen van */
 header {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   background: var(--fejlec);
@@ -152,7 +152,7 @@ nav button.aktiv {
 /* ---------- Fo resz ---------- */
 
 main {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 16px;
 }
@@ -541,6 +541,61 @@ footer {
 
 footer p {
   margin: 4px 0;
+}
+
+/* ---------- Kata csoportok ---------- */
+
+/* egy csoport alapbol csukva: csak a neve, a kesz szam es a csikja latszik,
+   kattintasra nyilik ki a katak listaja */
+.csoport,
+.csoport[open] {
+  border: none;
+  border-radius: 6px;
+  margin: 0 0 15px;
+}
+
+.csoport > summary {
+  display: block;
+  position: relative;
+  padding: 0;
+}
+
+.csoport > summary h3 {
+  margin-bottom: 4px;
+  padding-right: 110px; /* helyet hagyok a Megnyitas feliratnak */
+}
+
+.csoport > summary p {
+  margin: 0 0 8px;
+}
+
+.csoport > summary .csik {
+  margin-bottom: 0;
+}
+
+.csoport[open] > summary .csik {
+  margin-bottom: 15px;
+}
+
+.csoport > summary::after {
+  position: absolute;
+  top: 4px;
+  right: 0;
+}
+
+/* szeles kepernyon ket oszlopban vannak a csoportok,
+   a kinyitott csoport a teljes szelesseget kapja, hogy a kod kenyelmesen olvashato legyen */
+@media (min-width: 900px) {
+  #lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 15px;
+    align-items: start;
+  }
+
+  .csoport[open] {
+    grid-column: 1 / -1;
+  }
 }
 
 /* ---------- Telefonra ---------- */
